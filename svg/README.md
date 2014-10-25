@@ -11,7 +11,7 @@
 	rx:  圆角
 	ry:  圆角
 
-**[矩形示例](http://jsbin.com/mabeci/1/edit?html,output)**
+**[矩形示例](http://jsbin.com/zidida/7/edit?html,output)**
 	
 	
 1.2 **circle 圆**
@@ -19,14 +19,18 @@
 	cx:  圆心的x轴坐标
 	cy:  圆心的y轴坐标
 	r:   圆的半径
-	
+
+**[圆形示例](http://jsbin.com/yiquhu/4/edit?html,output)**
+
 1.3 **ellipse 椭圆**
 	
 	cx: 圆心的x轴坐标
 	cy: 圆心的y轴坐标
 	rx: x轴半径
 	ry: y轴半径
-	
+
+**[椭圆示例](http://jsbin.com/gofice/6/edit?html,output)**
+
 1.4 **line 直线**
 	
 	x1: 点1的x坐标
@@ -34,13 +38,20 @@
 	x2: 点2的x坐标
 	y2: 点2的y坐标
 
+**[直线示例](http://jsbin.com/medugi/4/edit?html,output)**
+
 1.5 **polyline 折线**
 
 * points = "x1 y1 x2 y2 x3 y3 x4 y4"
-	
+
+**[折线示例](http://jsbin.com/xugada/5/edit?html,output)**
+
 1.6 **polygon 多边形**
 
 * 和折现一样，只是最后两个点会闭合
+
+**[多边形示例](http://jsbin.com/xugada/8/edit?html,output)**
+
 
 ###2.基本属性
 
