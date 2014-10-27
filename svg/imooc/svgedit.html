@@ -3,8 +3,70 @@
 <head>
   <meta charset="UTF-8">
   <title>svgEdit</title>
+  <style>
+    #toolbox{
+      float:left;
+      width:300px;
+      height:650px;
+      border:1px solid black;
+    }
+    #toolbox h2{
+      background-color: #f5f6f7;
+    }
+    #toolbox form{
+      padding: 5px;
+    }
+    #canvas{
+      width:800px;
+      height:650px;
+      float:left;
+      border:1px solid blue;
+    }
+    label{
+      display: inline;
+      width: 80px;
+      text-align:left;
+    }
+    </style>
+    <script src="http://cdn.staticfile.org/jquery/2.1.1-rc2/jquery.min.js"></script>
 </head>
 <body>
-  
+
+<div id="toolbox">
+  <h2>创建</h2>
+  <form id="create">
+    <button type="button" shape="rect">长方形</button>
+    <button type="button" shape="circle">圆形</button>
+    <button type="button" shape="ellipse">椭圆形</button>
+    <button type="button" shape="line">折线</button>
+  </form>
+  <h2>形状</h2>
+  <form id="shape">还没有创建图形</form>
+  <h2>变换</h2>
+  <div id="transform" disabled="disabled">
+    <p>
+      <label>填充</label>
+      <input type="color" id="fill" value="#ffffff" />
+    </p>
+    <p>
+      <label for="">描边</label>
+      <input type="color" id="stroke" value="#ffffff" />
+    </p>
+    <p>
+      <label for="" style="display:inline-block">x轴平移</label>
+      <input type="range" min="-400" max="400" id="translateX" value="0" />
+      <label for="" style="display:inline-block">y轴平移</label>
+      <input type="range" min="-400" max="400" id="translateY" value="0" />
+      <label for="" style="display:inline-block">旋转</label>
+      <input type="range" min="-180" max="180" id="rotate" value="0" />
+      <label for="" style="display:inline-block">缩放</label>
+      <input type="range" min="-1" max="2" step="0.1" id="scale" value="0" />
+    </p>
+  </div>
+</div>
+
+<div id ="canvas"></div>
+
+<script src="svgedit.js"></script>
 </body>
 </html>
